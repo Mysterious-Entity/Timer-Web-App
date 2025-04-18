@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mousa's Timer Web App</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="timer">
+        <button onclick="hourUp()">Up</button>
+        <p id="hour">0</p>
+        <button onclick="hourDown()">Down</button>
+        <p>H</p>
+    </div>
+    <div class="timer">
+        <button onclick="minuteUp()">Up</button>
+        <p id="minute">0</p>
+        <button onclick="minuteDown()">Down</button>
+        <p>M</p>
+    </div>
+    <div class="timer">
+        <button onclick="secondUp()">Up</button>
+        <p id="second">0</p>
+        <button onclick="secondDown()">Down</button>
+        <p>S</p>
+    </div>
+    <div class="clearfix">
+    <button onclick="startTimer()">Start Timer</button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p>Time's Up!!</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+</html>
